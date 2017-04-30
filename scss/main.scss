@@ -9,8 +9,7 @@
 /*                  Main Menu                       */
 /****************************************************/ 
 #top-navbar {
-  height: 125px;
-  @include transparent-background-color(#000, 0, 0, 0, 0.6);
+  @include transparent-background-color(#000, 0, 0, 0, 0.7);
   border: none;
   margin: 0;
   text-align: center;
@@ -18,26 +17,32 @@
   .nav.navbar-nav {
     display: inline-block;
     float: none;
-    margin: 48px 0 0 0;
+    margin: 0;
     li {
+      height: 125px;
       display: inline-block;
       float: none;
       font-size: 16px;
       font-weight: bold;
-      margin: 0 9px;
+      line-height: 125px;
+      margin: 0 24px;
       a,
       a:link,
       a:visited {
         color: #FFF;
         cursor: pointer;
-        padding-top: 0;
+        display: inline-block;
+        padding: 0;
         text-transform: uppercase;
       }
       a:hover,
       a:active,
       a:focus {
-        @include transparent-color(#FFF, 255, 255, 255, 0.6);
+        @include transparent-color(#FFF, 255, 255, 255, 0.7);
       }
+    }
+    li.selected {
+      border-top: 4px solid #FFF;
     }
   }
 
@@ -50,10 +55,10 @@
     color: #FFF;
     display: inline-block;
     font-family: $font-titles;
-    font-size: 24px;
+    font-size: 21px;
     float: none;
     margin: 0 24px;
-    padding: 6px;
+    padding: 8px;
     position: relative;
     top: 3px;
     text-transform: uppercase;
@@ -85,8 +90,27 @@
 
 // Header Jumbotron
 #main-banner {
-  height: 900px;
+  height: 1100;
   background: transparent url('../img/yuri-baptista-jumbotron-2.jpg') no-repeat 0 -38px;
   background-size: 100% auto;
-  padding-top: 235px;
+  padding-top: 336px;
+
+  .heading {
+    color: #FFF;
+    font-family: $font-titles;    
+    text-align: center;    
+  }
+
+  h1 {
+    font-size: 111px;
+    text-shadow: 1px 1px 2px #000000;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 1px 2px 2px #000000;
+  }
 }
