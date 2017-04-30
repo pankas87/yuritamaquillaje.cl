@@ -1,0 +1,16 @@
+{
+  "name": "yuritamaquillaje.cl",
+  "version": "1.0.0",
+  "description": "yuritamaquillaje.cl, website for make-up artist Yuri Baptista",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npm install -g gulp"
+  },
+  "author": "Leonardo Graterol (@pankas87)",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
