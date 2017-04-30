@@ -1,0 +1,92 @@
+// Create variables with the colors
+
+@import 'mixins';
+@import 'fonts';
+@import 'colours'; 
+
+
+/****************************************************/
+/*                  Main Menu                       */
+/****************************************************/ 
+#top-navbar {
+  height: 125px;
+  @include transparent-background-color(#000, 0, 0, 0, 0.6);
+  border: none;
+  margin: 0;
+  text-align: center;
+
+  .nav.navbar-nav {
+    display: inline-block;
+    float: none;
+    margin: 48px 0 0 0;
+    li {
+      display: inline-block;
+      float: none;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0 9px;
+      a,
+      a:link,
+      a:visited {
+        color: #FFF;
+        cursor: pointer;
+        padding-top: 0;
+        text-transform: uppercase;
+      }
+      a:hover,
+      a:active,
+      a:focus {
+        @include transparent-color(#FFF, 255, 255, 255, 0.6);
+      }
+    }
+  }
+
+  .navbar-text {
+    width: 261px;
+    height: 57px;
+    border: 6px solid #FFF;
+    border-style: solid solid none solid;
+    cursor: default;
+    color: #FFF;
+    display: inline-block;
+    font-family: $font-titles;
+    font-size: 24px;
+    float: none;
+    margin: 0 24px;
+    padding: 6px;
+    position: relative;
+    top: 3px;
+    text-transform: uppercase;
+
+    .border-bottom-left,
+    .border-bottom-right {
+      width: 75px;
+      height: 6px;
+      background-color: #FFF;
+      display: block;
+      position: absolute;
+      top: 51px;
+    }
+
+    .border-bottom-left {      
+      left: -6px;
+    }
+
+    .border-bottom-right {
+      right: -6px;
+    }
+
+  }
+}
+
+/****************************************************/
+/*                   Homepage                       */
+/****************************************************/ 
+
+// Header Jumbotron
+#main-banner {
+  height: 900px;
+  background: transparent url('../img/yuri-baptista-jumbotron-2.jpg') no-repeat 0 -38px;
+  background-size: 100% auto;
+  padding-top: 235px;
+}

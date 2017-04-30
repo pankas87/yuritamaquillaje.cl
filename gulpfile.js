@@ -2,6 +2,12 @@ var gulp = require('gulp');
 var bs   = require('browser-sync').create();
 var sass = require('gulp-sass');
 
+var errorHanlder = function(error) {
+  console.log( error.toString() );
+
+  this.emit('end');
+};
+
 // Starting Browser-Sync server
 gulp.task('browser-sync', function(){
   var files = [
@@ -20,6 +26,7 @@ gulp.task('browser-sync', function(){
 gulp.task('sass', function() {
   return gulp.src('scss/*.scss')
               .pipe(sass())
+              .on('error', errorHanlder)
               .pipe(gulp.dest('css'))
               .pipe(bs.reload({stream: true})) // prompts a reload after compilation
 

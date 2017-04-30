@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,400,400i,600,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Lusitana:400,700');
+
+$font-titles: 'Playfair Display', serif;
+$font-subtitles: 'Lusitana', serif;
+$font-texts: 'Muli', sans-serif;
+
+body {
+  font-family: $font-texts;
+}

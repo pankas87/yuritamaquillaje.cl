@@ -1,0 +1,11 @@
+@mixin transparent-background-color($hex, $r, $g, $b, $alpha) {
+  background-color: $hex;
+  background-color: rgb($r, $g, $b);
+  background-color: rgba($r, $g, $b, $alpha);
+}
+
+@mixin transparent-color($hex, $r, $g, $b, $alpha) {
+  color: $hex;
+  color: rgb($r, $g, $b);
+  color: rgba($r, $g, $b, $alpha);
+}
