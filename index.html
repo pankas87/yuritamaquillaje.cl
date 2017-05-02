@@ -101,7 +101,8 @@
       <h3 class="col-md-12">Número telefónico</h3>
       <p class="col-md-12">(9) 87677476</p>
     </article>
-    <form class="row">
+    <form>
+        <fieldset class="row user-data">
           <fieldset class="col-md-4 form-group">
             <input type="text" id="contact-form-name" class="form-control name" placeholder="Nombre" name>
           </fieldset>
@@ -111,14 +112,19 @@
           <fieldset class="col-md-4 form-group">
             <input type="text" id="contact-form-phone" class="form-control phone" placeholder="Teléfono" name="phone">
           </fieldset>
+        </fieldset>
+        <fieldset class="row user-message">
           <fieldset class="col-md-12 form-group">
             <textarea name="message" id="contact-form-message" class="form-control message" placeholder="Escribe tu mensaje"></textarea>
           </fieldset>
-          <fieldset class="col-md-12 form-group">
+          <fieldset class="col-md-12 form-group submit">
             <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
           </fieldset>
+        </fieldset>
     </form>
   </section>
+
+  <footer id="page-footer"></footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

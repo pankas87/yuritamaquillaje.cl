@@ -13,6 +13,50 @@ body {
 }
 
 
+// Forms
+.form-control {
+  background-color: $soft-grey;
+  border-color: $soft-grey;
+  border-radius: 0;
+}
+
+textarea.form-control {
+  background-color: $soft-grey !important;
+}
+
+.form-control:active,
+.form-control:focus {
+  border-color: $primary-solid-4;
+  outline-color: $primary-solid-4;
+}
+
+.btn {
+  border-radius: 0;
+  padding: 12px 18px;
+}
+
+.btn.btn-primary {
+  border-color: $primary-solid-2;
+  background-color: $primary-solid-2;
+}
+
+.btn.btn-primary:hover {
+  border-color: darken($primary-solid-2, 10%);
+  background-color: darken($primary-solid-2, 10%);
+}
+
+.btn.btn-primary:active,
+.btn.btn-primary:focus, {
+  border-color: darken($primary-solid-2, 12%);
+  background-color: darken($primary-solid-2, 12%);
+}
+
+// Footer
+#page-footer {
+  height: 94px;
+  background-color: $basic-white;
+}
+
 /****************************************************/
 /*                  Main Menu                       */
 /****************************************************/ 
@@ -103,6 +147,7 @@ body {
   height: 960px;
   background: transparent url('../img/yuri-baptista-jumbotron-2.jpg') no-repeat 0 -51px;
   background-size: 100% auto;
+  margin-bottom: -280px;
   padding-top: 333px;
 
   .heading {
@@ -145,6 +190,7 @@ body {
     font-weight: 600;
     font-style: italic;
     line-height: 0.9em;
+    margin-bottom: 0;
     text-shadow: 1px 2px 2px #000000;
   }
 }
@@ -320,8 +366,8 @@ body {
 
 // Contact
 #contact {
-  background-image: linear-gradient(rgba(210,176,105,0.45), rgba(210,176,105,0.45)), url('../img/yuri-baptista-utensilios-2.jpg');
-  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(207, 189, 106,0.85), rgba(207, 189, 106,0.85)), url('../img/yuri-baptista-utensilios-2.jpg');
+  background-repeat: no-repeat;  
   background-position: 0 0;
   background-size: cover;
   margin-bottom: 90px;
@@ -375,5 +421,30 @@ body {
     line-height: 0;
     margin: 0 auto 51px auto;
     overflow: hidden;    
+  }
+  form {
+    .row {
+      fieldset {
+        .form-control {
+          height: 72px;
+          font-size: 18px;
+          letter-spacing: 1px;
+        }
+        textarea.form-control {
+          height: 300px;
+          font-size: 18px !important;
+          letter-spacing: 1px !important;
+        }
+        .form-control::-webkit-input-placeholder,
+        .form-control::-moz-placeholder,
+        .form-control:-ms-input-placeholder,
+        .form-control:-moz-placeholder {
+          color: $dark-yellow-text;
+        }
+      }
+      fieldset.submit {
+        text-align: center;
+      }
+    }
   }
 }
