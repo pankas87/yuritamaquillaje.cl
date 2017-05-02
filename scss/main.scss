@@ -51,6 +51,19 @@ textarea.form-control {
   background-color: darken($primary-solid-2, 12%);
 }
 
+// Helpers
+.box-shadow {  
+  -webkit-box-shadow: 2px 2px 8px 1px rgba(50, 50, 50, 0.6), -2px 2px 8px 1px rgba(50, 50, 50, 0.6);
+  -moz-box-shadow:    2px 2px 8px 1px rgba(50, 50, 50, 0.6), -2px 2px 8px 1px rgba(50, 50, 50, 0.6);
+  box-shadow:         2px 2px 8px 1px rgba(50, 50, 50, 0.6), -2px 2px 8px 1px rgba(50, 50, 50, 0.6);
+}
+
+.box-shadow-small {  
+  -webkit-box-shadow: 2px 2px 4px 1px rgba(50, 50, 50, 0.5), -2px 2px 4px 1px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow:    2px 2px 4px 1px rgba(50, 50, 50, 0.5), -2px 2px 4px 1px rgba(50, 50, 50, 0.5);
+  box-shadow:         2px 2px 4px 1px rgba(50, 50, 50, 0.5), -2px 2px 4px 1px rgba(50, 50, 50, 0.5);
+}
+
 // Footer
 #page-footer {
   height: 94px;
@@ -306,31 +319,35 @@ textarea.form-control {
       height: 100%;
       max-height: 100%;
       background: transparent url('../img/sprite-1.png') no-repeat content-box;
-      header {
-        margin: 0 0 51px 0;
-        img {
-          width: 100%;
-          height: 247px;
-          display: block;
-          margin: 0 0 48px 0;
+      .box-shadow-small {
+        height: 100%;
+        max-height: 100%;
+        header {
+          margin: 0 0 51px 0;
+          img {
+            width: 100%;
+            height: 247px;
+            display: block;
+            margin: 0 0 48px 0;
+          }
+          h3 {
+            color: $basic-white;
+            font-family: $font-titles;
+            font-weight: bold;
+            font-size: 33px;
+            line-height: 1.2em;
+            margin: 0;
+            text-align: center;
+            text-transform: uppercase;
+          }
         }
-        h3 {
-          color: $basic-white;
-          font-family: $font-titles;
-          font-weight: bold;
-          font-size: 33px;
-          line-height: 1.2em;
-          margin: 0;
-          text-align: center;
-          text-transform: uppercase;
+        p {
+            color: $basic-white;
+            font-size: 18px;
+            font-weight: 400;
+            padding: 0 9px;
+            text-align: center;
         }
-      }
-      p {
-          color: $basic-white;
-          font-size: 18px;
-          font-weight: 400;
-          padding: 0 9px;
-          text-align: center;
       }
     }
     .makeup {
@@ -360,7 +377,6 @@ textarea.form-control {
     article.workshops:after {
       background-color: $primary-solid-3;
     }
-
   }
 }
 
