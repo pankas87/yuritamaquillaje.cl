@@ -64,12 +64,6 @@ textarea.form-control {
   box-shadow:         2px 2px 4px 1px rgba(50, 50, 50, 0.5), -2px 2px 4px 1px rgba(50, 50, 50, 0.5);
 }
 
-// Footer
-#page-footer {
-  height: 94px;
-  background-color: $basic-white;
-}
-
 /****************************************************/
 /*                  Main Menu                       */
 /****************************************************/ 
@@ -462,5 +456,32 @@ textarea.form-control {
         text-align: center;
       }
     }
+  }
+}
+
+/****************************************************/
+/*                    Footer                        */
+/****************************************************/ 
+#page-footer {
+  background-color: $basic-white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  aside.signature {
+    p {
+      height: 69px;
+      width: 270px;
+      background: transparent url('../img/sprite-1.png') no-repeat -826px -6287px;
+      color: $secondary-title-1;
+      font-family: $font-titles;
+      font-size: 35px;
+      line-height: 1.7em;
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+  .extra-info {
+    font-size: 12px;
+    line-height: 5.8em;
+    text-transform: uppercase;
   }
 }
