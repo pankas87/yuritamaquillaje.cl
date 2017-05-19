@@ -69,8 +69,11 @@ textarea.form-control {
 /****************************************************/ 
 #top-navbar {
   max-height: 90px;
-  @include transparent-background-color(#000, 0, 0, 0, 0.7);
+  @include transparent-background-color(#000, 0, 0, 0, 0.45);
   border: none;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.6);
+  -moz-box-shadow:    0px 2px 2px 0px rgba(0,0,0,0.6);
+  box-shadow:         0px 2px 2px 0px rgba(0,0,0,0.6);
   margin: 0;
   text-align: center;
 
@@ -458,6 +461,72 @@ textarea.form-control {
     }
   }
 }
+
+/****************************************************/
+/*                  Portfolio                       */
+/****************************************************/ 
+#portfolio-body {
+  #decorative-header {
+    height: 90px;
+    background: transparent url('../img/yuri-baptista-jumbotron-2.jpg') no-repeat 0 -258px;
+    background-size: 100% auto;
+  }
+
+  #section-header {
+    height: 111px;
+    background: $basic-white;    
+    position: relative;
+    h1 {
+      color: $secondary-title-1;
+      margin: 37px auto;
+      font-family: $font-titles;
+      font-size: 35px;
+      font-weight: 600;
+      line-height: 1em;
+    }
+    .decoration {
+      width: 414px;
+      height: 111px;
+      background: transparent url('../img/sprite-2.png') no-repeat;
+      position: absolute;
+      top: 0;
+    }
+    .decoration.left {
+      background-position: 0 -129px;
+      left: 0;
+    }
+    .decoration.right {
+      background-position: -1505px -129px;
+      right: 0;
+    }
+  }
+
+  #portfolio {
+    padding: 90px 0;
+    ul.portfolio-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0;
+      img {
+        height: 328px;
+        background-color: $light-grey-text;
+        display: inline-block;
+        margin: auto;
+      }
+      img.landscape {
+        width: 48%;
+        flex-grow: 2;
+      }
+      img.portrait {
+        width: 24%;
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
 
 /****************************************************/
 /*                    Footer                        */
