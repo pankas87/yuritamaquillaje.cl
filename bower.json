@@ -1,0 +1,19 @@
+{
+  "name": "yuritamaquillaje.cl",
+  "description": "yuritamaquillaje.cl, website for make-up artist Yuri Baptista",
+  "main": "index.js",
+  "authors": [
+    "Leonardo Graterol (@pankas87)"
+  ],
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/pankas87/yuritamaquillaje.cl",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}
