@@ -549,28 +549,31 @@ textarea.form-control {
       flex-wrap: wrap;
       align-items: center;
       margin: 0;
-      img {
+      a {
+        display: block;
         height: 328px;
-        background-color: $light-grey-text;
-        cursor: pointer;
-        display: inline-block;
-        margin: auto;
+        img {
+          width: 100%;
+          height: 100%;          
+          background-color: $light-grey-text;
+          cursor: pointer;
+          display: inline-block;
+          margin: auto;
+        }        
       }
-      img.landscape {
+      a.landscape {
         width: 48%;
         flex-grow: 2;
       }
-      img.portrait {
+      a.portrait {
         width: 24%;
         flex-grow: 1;
       }
     }
   }
 
-  #lean_content_portrait {
-    width: 27%; 
-    display: none;    
-    margin-top: -281px;
+  #lean_content_picture {
+    display: none;
     top: 50% !important;
     img {
       width: 100%;
@@ -579,32 +582,25 @@ textarea.form-control {
     }
     p {
       width: 75%;
-      color: $secondary-title-2;
+      color: $basic-white;
       font-family: $font-texts;
       font-size: 24px;
       margin: 0 auto;
       text-align: center;
+    }
+    .close {
+
     }
   }
 
-  #lean_content_landscape {
+  #lean_content_picture.portrait {
+    width: 27%;     
+    margin-top: -281px;
+  }
+
+  #lean_content_picture.landscape {
     width: 60%;
-    display: none;
     margin-top: -272px;
-    top: 50% !important;
-    img {
-      width: 100%;
-      display: block;
-      margin: 0 auto 6px auto;
-    }
-    p {
-      width: 75%;
-      color: $secondary-title-2;
-      font-family: $font-texts;
-      font-size: 24px;
-      margin: 0 auto;
-      text-align: center;
-    }
   }
 }
 
