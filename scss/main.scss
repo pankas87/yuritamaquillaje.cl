@@ -167,6 +167,13 @@ textarea.form-control {
       left: 50%;
       text-transform: uppercase;
 
+      img {
+        width: 45px;
+        position: absolute;
+        top: 34px;
+        left: 73px;
+      }
+
       .border-bottom-left,
       .border-bottom-right {
         width: 75px;
@@ -331,7 +338,6 @@ textarea.form-control {
           font-size: 36px;
           line-height: 1.2em;
           margin: 0;
-
         }
         .title {
           color: $secondary-title-2;
@@ -578,29 +584,48 @@ textarea.form-control {
     img {
       width: 100%;
       display: block;
-      margin: 0 auto 6px auto;
+      margin: 0 auto;
     }
     p {
-      width: 75%;
+      width: 100%;
+      @include transparent-background-color(#000, 0, 0, 0, 0.5);
       color: $basic-white;
       font-family: $font-texts;
-      font-size: 24px;
-      margin: 0 auto;
-      text-align: center;
+      font-size: 15px;
+      line-height: 1em;
+      margin: 0;
+      padding: 15px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      text-align: left;
     }
-    .close {
-
+    .close-modal {
+      width: 21px;
+      height: 21px;
+      display: block;
+      border-radius: 10px;
+      @include transparent-background-color(#FFF, 255, 255, 255, 0.65);
+      @include transparent-color(#000, 0, 0, 0, 0.5);
+      cursor: pointer;
+      font-size: 21px;
+      font-weight: 800;
+      line-height: 0.85em;
+      position: absolute;
+      right: 3px;
+      top: 3px;
+      text-align: center;
     }
   }
 
   #lean_content_picture.portrait {
-    width: 27%;     
-    margin-top: -281px;
+    width: 33%;
+    margin-top: -322px;
   }
 
   #lean_content_picture.landscape {
-    width: 60%;
-    margin-top: -272px;
+    width: 72%;
+    margin-top: -311px;
   }
 }
 
@@ -610,8 +635,8 @@ textarea.form-control {
 /****************************************************/ 
 #page-footer {
   background-color: $basic-white;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 33px;
+  padding-bottom: 33px;
   aside.signature {
     p {
       height: 69px;
@@ -623,6 +648,12 @@ textarea.form-control {
       line-height: 1.7em;
       margin-bottom: 0;
       text-align: center;
+    }
+    img {
+      width: 57px;
+      position: absolute;
+      top: 52px;
+      left: 181px;
     }
   }
   .extra-info {

@@ -15,6 +15,7 @@
     <div class="navbar-wrap collapse navbar-collapse">
       <p class="navbar-text">
         <span>Yuri Baptista</span>
+        <img src="img/yuritamakeup-firma.png" alt="Yuritamakeup Firma">
         <span class="border-bottom-left"></span>
         <span class="border-bottom-right"></span>
       </p>
@@ -92,6 +93,7 @@
         <span class="extra-info col-md-3 text-center">&#169; 2017 - Yuri Baptista</span>        
         <aside class="signature col-md-6">
           <p class="center-block">Yuri Baptista</p>
+          <img src="img/yuritamakeup-firma.png" alt="Yuritamakeup Firma">
         </aside>
         <span class="extra-info col-md-3 text-center">Maquillaje Profesional</span>
         </div>
@@ -101,6 +103,7 @@
   <aside id="lean_content_picture">
     <img src="" alt="">
     <p></p>
+    <span class="close-modal">&times;</span>
   </aside>
 
   <div id="lean_overlay">
@@ -112,7 +115,7 @@
   <script>
     (function(){
       $(document).on('ready', function(){
-        $("a[rel*=leanModal]").leanModal({top: 0, overlay: 0.8});
+        $("a[rel*=leanModal]").leanModal({top: 0, overlay: 0.8, closeButton: '.close-modal'});
 
         $("a[rel*=leanModal] img").on("click", function(evt) {
           evt.stopPropagation();
