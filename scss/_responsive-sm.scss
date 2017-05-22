@@ -7,12 +7,8 @@
   /*                  Main Menu                       */
   /****************************************************/ 
   #top-navbar {
-    max-height: 90px;
-    z-index: 10;
     .navbar-wrap {
       .nav.navbar-nav {
-        height: 90px;
-        margin: 0 24px;
         li {
           min-width: 88px;
           max-width: 88px;
@@ -22,89 +18,22 @@
           font-size: 13px;
           font-weight: bold;
           line-height: 90px;
-          margin: 0 15px;
-          a,
-          a:link,
-          a:visited {
-            color: #FFF;
-            cursor: pointer;
-            display: inline-block;
-            padding: 0;
-            text-transform: uppercase;
-          }
-          a:hover,
-          a:active,
-          a:focus {
-            @include transparent-color(#FFF, 255, 255, 255, 0.7);
-          }
+          margin: 0 6px;
         }
         li.services {
-          margin: 0 111px 0 15px;
+          margin: 0 114px 0 6px;
         }
         li.portfolio {
-          margin: 0 15px 0 111px;
-        }
-        li.bullet:after {
-          content:".";
-          @include transparent-color(#FFF, 255, 255, 255, 0.7);
-          display: block;
-          font-family: serif;
-          font-size: 25px;
-          position: absolute;
-          top: -6px;
+          margin: 0 6px 0 114px;
         }
         li.home.bullet:after {
-          right: -16px;
+          right: -6px;
         }
         li.portfolio.bullet:after {
-          right: -23px;
+          right: -14px;
         }
         li.selected {
           border-top: 4px solid #FFF;
-        }
-      }
-
-      .navbar-text {
-        width: 204px;
-        height: 54px;
-        border: 6px solid #FFF;
-        border-style: solid solid none solid;
-        cursor: default;
-        color: #FFF;
-        display: inline-block;
-        font-family: $font-titles;
-        font-size: 21px;
-        float: none;
-        margin: 0 0 0 -102px;
-        padding: 6px;
-        position: absolute;
-        top: 12px;
-        left: 50%;
-        text-transform: uppercase;
-
-        img {
-          width: 45px;
-          position: absolute;
-          top: 34px;
-          left: 73px;
-        }
-
-        .border-bottom-left,
-        .border-bottom-right {
-          width: 75px;
-          height: 6px;
-          background-color: #FFF;
-          display: block;
-          position: absolute;
-          top: 48px;
-        }
-
-        .border-bottom-left {      
-          left: -6px;
-        }
-
-        .border-bottom-right {
-          right: -6px;
         }
       }
     }
@@ -116,147 +45,80 @@
 
   // Header Jumbotron
   #main-banner {
-    height: 429px;
-    background: transparent url('../img/yuri-baptista-jumbotron-2.jpg') no-repeat 0 -51px;
-    background-size: 100% auto;
-    margin-bottom: 0;
+    height: 387px;
+    margin-bottom: 24px;
     padding-top: 225px;
-    .heading {
-      color: #FFF;
-      font-family: $font-titles;
-      margin-top: 0;
-      text-align: center;
-    }
 
     h1 {
       font-size: 72px;
       margin-bottom: 12px;
-      line-height: 0.9em;
-      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
-      text-transform: uppercase;
     }
 
     hr {
-      height: 15px;
-      border: none;
-      margin-top: 0;
       margin-bottom: 12px;
-      line-height: 4px;
-      overflow: hidden;
     }
 
     hr:after {
       content: "...................................";
-      color: #FFF;
-      display: block;
-      font-family: serif;
-      font-size: 25px;
-      letter-spacing: 6px;
-      text-align: center;
-      text-shadow: 1px 1px 1px #000000;
     }
 
-    h2 {    
+    h2 {
       font-size: 36px;
-      font-weight: 600;
-      font-style: italic;
-      line-height: 0.9em;
-      margin-bottom: 0;
-      text-shadow: 1px 2px 2px #000000;
     }
   }
 
   // About Me
   #about-me {
-    height: 818px;
-    max-height: 818px;
-    background-color: $section-background;
-    margin-bottom: 90px;
+    height: 530px;
+    max-height: 530px;
+    margin-bottom: 24px;
     .row {
-      height: 100%;
-      max-height: 100%;
-      overflow: hidden;
-
       aside {
-        height: 100%;
-        background: transparent url('../img/sprite-1.png') no-repeat -375px -990px;
+        background: transparent url('../img/sprite-1.png') no-repeat -243px -641px;
+        background-size: 1243px;
         position: relative;
         img {
-          width: 450px;
-          height: 640px;
+          width: 290px;
+          height: 412px;
           display: block;
           position: absolute;
-          top: 90px;
-          left: 90px;
+          top: 60px;
+          left: 60px;
         }
       }
-
       article {
-        padding-top: 70px;
+        padding-top: 42px;
         header {
-          margin: 0 0 44px 0;
+          margin: 0 0 21px 0;
           h3 {
-            color: $primary-title-1;
-            font-family: $font-titles;
-            font-size: 60px;
-            font-weight: bold;
+            font-size: 33px;
             line-height: 1em;
-            margin: 0 0 57px 0;
+            margin: 0 0 21px 0;
             padding: 0 15px;
-            text-transform: uppercase;
           }
           p {
-            color: $dark-grey-text;
-            font-size: 22px;
-            font-style: italic;
-            font-weight: 300;
-            line-height: 1.25em;
-            margin: 0;
-            padding: 0 15px;
-          }
-          p:before,
-          p:after {
-            width: calc(100% + 15px);
-            max-width: calc(100% + 15px);
-            height: 10px;
-            color: $mild-grey;
-            content: '.................................................................................';
-            display: block;
-            font-family: serif;
-            font-size: 18px;
-            letter-spacing: 3px;
-            line-height: 1px;
-            margin: 0 -15px;
-            overflow: hidden; 
+            font-size: 14px;
           }
           p:before {
-            margin-bottom: 22px;
+            margin-bottom: 12px;
           }
           p:after {
-            margin-top: 22px; 
+            margin-top: 12px; 
           }
         }
         section {
-          height: 100%;
-          max-height: 100%;
-          margin: 0 0 57px 0;
+          margin: 0 0 42px 0;
           p {
-            font-size: 16px;
+            font-size: 13px;
           }
         }
         footer {
           .signature {
-            color: $secondary-title-1; 
-            font-family: $font-titles;
-            font-size: 36px;
-            line-height: 1.2em;
-            margin: 0;
+            font-size: 33px;
+            line-height: 1.4em;
           }
           .title {
-            color: $secondary-title-2;
-            font-size: 12px;
-            font-weight: bold;
-            text-transform: uppercase;
+            font-size: 11px;
           }
         }
       }
@@ -265,55 +127,37 @@
 
   // Services
   #services {
-    height: 552px;
-    max-height: 552px;
-    margin-bottom: 90px;
+    height: 331px;
+    max-height: 331px;
+    margin-bottom: 24px;
     .row {
-      height: 100%;
-      max-height: 100%;
       article {
-        height: 100%;
-        max-height: 100%;
         background: transparent url('../img/sprite-1.png') no-repeat content-box;
+        background-size: 1142px;
         .box-shadow-small {
-          height: 100%;
-          max-height: 100%;
           header {
             margin: 0 0 51px 0;
             img {
-              width: 100%;
-              height: 247px;
-              display: block;
-              margin: 0 0 48px 0;
+              height: 147px;
+              margin: 0 0 21px 0;
             }
             h3 {
-              color: $basic-white;
-              font-family: $font-titles;
-              font-weight: bold;
-              font-size: 33px;
-              line-height: 1.2em;
-              margin: 0;
-              text-align: center;
-              text-transform: uppercase;
+              font-size: 24px;
             }
           }
           p {
-              color: $basic-white;
-              font-size: 18px;
-              font-weight: 400;
-              padding: 0 9px;
-              text-align: center;
+              font-size: 15px;
           }
         }
       }
       .makeup {
-        background-position: -375px -1899px;
+        background-position: -223px -1129px;
       }
       .hairdo {
-        background-position: -775px -1899px;
+        background-position: -461px -1129px;
       }
       .workshops {
-        background-position: -1175px -1899px;
+        background-position: -699px -1129px;
       }
       article:after {
         width: calc(100% - 30px);
@@ -342,7 +186,7 @@
     background-repeat: no-repeat;  
     background-position: 0 0;
     background-size: cover;
-    margin-bottom: 90px;
+    margin-bottom: 24px;
     padding: 76px 60px;
     header {
       margin-bottom: 46px;
