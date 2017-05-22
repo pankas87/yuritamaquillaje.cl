@@ -1,0 +1,579 @@
+@media (min-width: 768px) and (max-width: 991px){
+  /****************************************************/
+  /*                   General                        */
+  /****************************************************/ 
+
+  /****************************************************/
+  /*                  Main Menu                       */
+  /****************************************************/ 
+  #top-navbar {
+    max-height: 90px;
+    z-index: 10;
+    .navbar-wrap {
+      .nav.navbar-nav {
+        height: 90px;
+        margin: 0 24px;
+        li {
+          min-width: 88px;
+          max-width: 88px;
+          height: 90px;
+          display: inline-block;
+          float: none;
+          font-size: 13px;
+          font-weight: bold;
+          line-height: 90px;
+          margin: 0 15px;
+          a,
+          a:link,
+          a:visited {
+            color: #FFF;
+            cursor: pointer;
+            display: inline-block;
+            padding: 0;
+            text-transform: uppercase;
+          }
+          a:hover,
+          a:active,
+          a:focus {
+            @include transparent-color(#FFF, 255, 255, 255, 0.7);
+          }
+        }
+        li.services {
+          margin: 0 111px 0 15px;
+        }
+        li.portfolio {
+          margin: 0 15px 0 111px;
+        }
+        li.bullet:after {
+          content:".";
+          @include transparent-color(#FFF, 255, 255, 255, 0.7);
+          display: block;
+          font-family: serif;
+          font-size: 25px;
+          position: absolute;
+          top: -6px;
+        }
+        li.home.bullet:after {
+          right: -16px;
+        }
+        li.portfolio.bullet:after {
+          right: -23px;
+        }
+        li.selected {
+          border-top: 4px solid #FFF;
+        }
+      }
+
+      .navbar-text {
+        width: 204px;
+        height: 54px;
+        border: 6px solid #FFF;
+        border-style: solid solid none solid;
+        cursor: default;
+        color: #FFF;
+        display: inline-block;
+        font-family: $font-titles;
+        font-size: 21px;
+        float: none;
+        margin: 0 0 0 -102px;
+        padding: 6px;
+        position: absolute;
+        top: 12px;
+        left: 50%;
+        text-transform: uppercase;
+
+        img {
+          width: 45px;
+          position: absolute;
+          top: 34px;
+          left: 73px;
+        }
+
+        .border-bottom-left,
+        .border-bottom-right {
+          width: 75px;
+          height: 6px;
+          background-color: #FFF;
+          display: block;
+          position: absolute;
+          top: 48px;
+        }
+
+        .border-bottom-left {      
+          left: -6px;
+        }
+
+        .border-bottom-right {
+          right: -6px;
+        }
+      }
+    }
+  }
+
+  /****************************************************/
+  /*                   Homepage                       */
+  /****************************************************/ 
+
+  // Header Jumbotron
+  #main-banner {
+    height: 429px;
+    background: transparent url('../img/yuri-baptista-jumbotron-2.jpg') no-repeat 0 -51px;
+    background-size: 100% auto;
+    margin-bottom: 0;
+    padding-top: 225px;
+    .heading {
+      color: #FFF;
+      font-family: $font-titles;
+      margin-top: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 72px;
+      margin-bottom: 12px;
+      line-height: 0.9em;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+      text-transform: uppercase;
+    }
+
+    hr {
+      height: 15px;
+      border: none;
+      margin-top: 0;
+      margin-bottom: 12px;
+      line-height: 4px;
+      overflow: hidden;
+    }
+
+    hr:after {
+      content: "...................................";
+      color: #FFF;
+      display: block;
+      font-family: serif;
+      font-size: 25px;
+      letter-spacing: 6px;
+      text-align: center;
+      text-shadow: 1px 1px 1px #000000;
+    }
+
+    h2 {    
+      font-size: 36px;
+      font-weight: 600;
+      font-style: italic;
+      line-height: 0.9em;
+      margin-bottom: 0;
+      text-shadow: 1px 2px 2px #000000;
+    }
+  }
+
+  // About Me
+  #about-me {
+    height: 818px;
+    max-height: 818px;
+    background-color: $section-background;
+    margin-bottom: 90px;
+    .row {
+      height: 100%;
+      max-height: 100%;
+      overflow: hidden;
+
+      aside {
+        height: 100%;
+        background: transparent url('../img/sprite-1.png') no-repeat -375px -990px;
+        position: relative;
+        img {
+          width: 450px;
+          height: 640px;
+          display: block;
+          position: absolute;
+          top: 90px;
+          left: 90px;
+        }
+      }
+
+      article {
+        padding-top: 70px;
+        header {
+          margin: 0 0 44px 0;
+          h3 {
+            color: $primary-title-1;
+            font-family: $font-titles;
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 1em;
+            margin: 0 0 57px 0;
+            padding: 0 15px;
+            text-transform: uppercase;
+          }
+          p {
+            color: $dark-grey-text;
+            font-size: 22px;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 1.25em;
+            margin: 0;
+            padding: 0 15px;
+          }
+          p:before,
+          p:after {
+            width: calc(100% + 15px);
+            max-width: calc(100% + 15px);
+            height: 10px;
+            color: $mild-grey;
+            content: '.................................................................................';
+            display: block;
+            font-family: serif;
+            font-size: 18px;
+            letter-spacing: 3px;
+            line-height: 1px;
+            margin: 0 -15px;
+            overflow: hidden; 
+          }
+          p:before {
+            margin-bottom: 22px;
+          }
+          p:after {
+            margin-top: 22px; 
+          }
+        }
+        section {
+          height: 100%;
+          max-height: 100%;
+          margin: 0 0 57px 0;
+          p {
+            font-size: 16px;
+          }
+        }
+        footer {
+          .signature {
+            color: $secondary-title-1; 
+            font-family: $font-titles;
+            font-size: 36px;
+            line-height: 1.2em;
+            margin: 0;
+          }
+          .title {
+            color: $secondary-title-2;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  // Services
+  #services {
+    height: 552px;
+    max-height: 552px;
+    margin-bottom: 90px;
+    .row {
+      height: 100%;
+      max-height: 100%;
+      article {
+        height: 100%;
+        max-height: 100%;
+        background: transparent url('../img/sprite-1.png') no-repeat content-box;
+        .box-shadow-small {
+          height: 100%;
+          max-height: 100%;
+          header {
+            margin: 0 0 51px 0;
+            img {
+              width: 100%;
+              height: 247px;
+              display: block;
+              margin: 0 0 48px 0;
+            }
+            h3 {
+              color: $basic-white;
+              font-family: $font-titles;
+              font-weight: bold;
+              font-size: 33px;
+              line-height: 1.2em;
+              margin: 0;
+              text-align: center;
+              text-transform: uppercase;
+            }
+          }
+          p {
+              color: $basic-white;
+              font-size: 18px;
+              font-weight: 400;
+              padding: 0 9px;
+              text-align: center;
+          }
+        }
+      }
+      .makeup {
+        background-position: -375px -1899px;
+      }
+      .hairdo {
+        background-position: -775px -1899px;
+      }
+      .workshops {
+        background-position: -1175px -1899px;
+      }
+      article:after {
+        width: calc(100% - 30px);
+        height: 6px;
+        content: '';
+        display: block;
+        position: absolute;
+        left: 15px;
+        bottom: 0;
+      }
+      article.makeup:after {
+        background-color: $primary-solid-1;
+      }
+      article.hairdo:after {
+        background-color: $primary-solid-2;
+      }
+      article.workshops:after {
+        background-color: $primary-solid-3;
+      }
+    }
+  }
+
+  // Contact
+  #contact {
+    background-image: linear-gradient(rgba(207, 189, 106,0.85), rgba(207, 189, 106,0.85)), url('../img/yuri-baptista-utensilios-2.jpg');
+    background-repeat: no-repeat;  
+    background-position: 0 0;
+    background-size: cover;
+    margin-bottom: 90px;
+    padding: 76px 60px;
+    header {
+      margin-bottom: 46px;
+      h3 {
+        font-family: $font-titles;
+        font-size: 45px;
+        font-weight: bold;
+        line-height: 1.2em;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+        .city {
+          color: $basic-white;
+        }
+        .country {
+          color: $light-yellow-text;
+        }
+      }
+    }
+    article {
+      margin-bottom: 61px;
+      h3 {
+        color: $light-yellow-text;
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 9px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      p {
+        color: $basic-white;
+        font-size: 35px;
+        font-family: $font-subtitles;
+        text-align: center;
+      }
+    }
+    article:before {
+      width: 35%;
+      max-width: 35%;
+      height: 11px;
+      color: $basic-white;
+      content: '..........................................................................................';
+      display: block;
+      font-family: serif;
+      font-size: 29px;
+      letter-spacing: 6px;
+      line-height: 0;
+      margin: 0 auto 51px auto;
+      overflow: hidden;    
+    }
+    form {
+      .row {
+        fieldset {
+          .form-control {
+            height: 72px;
+            font-size: 18px;
+            letter-spacing: 1px;
+          }
+          textarea.form-control {
+            height: 300px;
+            font-size: 18px !important;
+            letter-spacing: 1px !important;
+          }
+          .form-control::-webkit-input-placeholder,
+          .form-control::-moz-placeholder,
+          .form-control:-ms-input-placeholder,
+          .form-control:-moz-placeholder {
+            color: $dark-yellow-text;
+          }
+        }
+        fieldset.user-data {
+          margin-bottom: 15px;
+        }
+        fieldset.submit {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  /****************************************************/
+  /*                  Portfolio                       */
+  /****************************************************/ 
+  #portfolio-body {
+    #decorative-header {
+      height: 90px;
+      background: transparent url('../img/yuri-baptista-jumbotron-2.jpg') no-repeat 0 -258px;
+      background-size: 100% auto;
+    }
+
+    #section-header {
+      height: 111px;
+      background: $basic-white;    
+      position: relative;
+      h1 {
+        color: $secondary-title-1;
+        margin: 37px auto;
+        font-family: $font-titles;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 1em;
+      }
+      .decoration {
+        width: 414px;
+        height: 111px;
+        background: transparent url('../img/sprite-2.png') no-repeat;
+        position: absolute;
+        top: 0;
+      }
+      .decoration.left {
+        background-position: 0 -129px;
+        left: 0;
+      }
+      .decoration.right {
+        background-position: -1505px -129px;
+        right: 0;
+      }
+    }
+
+    #portfolio {
+      padding: 90px 0;
+      ul.portfolio-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0;
+        a {
+          display: block;
+          height: 328px;
+          img {
+            width: 100%;
+            height: 100%;          
+            background-color: $light-grey-text;
+            cursor: pointer;
+            display: inline-block;
+            margin: auto;
+          }        
+        }
+        a.landscape {
+          width: 48%;
+          flex-grow: 2;
+        }
+        a.portrait {
+          width: 24%;
+          flex-grow: 1;
+        }
+      }
+    }
+
+    #lean_content_picture {
+      display: none;
+      top: 50% !important;
+      img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+      p {
+        width: 100%;
+        @include transparent-background-color(#000, 0, 0, 0, 0.5);
+        color: $basic-white;
+        font-family: $font-texts;
+        font-size: 15px;
+        line-height: 1em;
+        margin: 0;
+        padding: 15px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: left;
+      }
+      .close-modal {
+        width: 21px;
+        height: 21px;
+        display: block;
+        border-radius: 10px;
+        @include transparent-background-color(#FFF, 255, 255, 255, 0.65);
+        @include transparent-color(#000, 0, 0, 0, 0.5);
+        cursor: pointer;
+        font-size: 21px;
+        font-weight: 800;
+        line-height: 0.85em;
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        text-align: center;
+      }
+    }
+
+    #lean_content_picture.portrait {
+      width: 33%;
+      margin-top: -322px;
+    }
+
+    #lean_content_picture.landscape {
+      width: 72%;
+      margin-top: -311px;
+    }
+  }
+
+  /****************************************************/
+  /*                    Footer                        */
+  /****************************************************/ 
+  #page-footer {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    aside.signature {
+      p {
+        height: 69px;
+        width: 270px;
+        background: transparent url('../img/sprite-1.png') no-repeat -826px -6287px;
+        color: $secondary-title-1;
+        font-family: $font-titles;
+        font-size: 35px;
+        line-height: 1.7em;
+        margin-bottom: 0;
+        position: relative;
+        text-align: center;
+        img {
+          width: 57px;
+          position: absolute;
+          top: 53px;
+          left: 112px;
+        }
+      }
+    }
+    .extra-info {
+      font-size: 11px;
+      line-height: 5.8em;
+    }
+  }
+}
