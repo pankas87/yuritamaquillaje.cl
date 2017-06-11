@@ -56,23 +56,41 @@
       article {
         padding-top: 48px;
         header {
-          margin: 0 0 30px 0;
+          margin: 0 0 9px 0;
           h3 {
-            font-size: 54px;
-            margin: 0 0 30px 0;
+            font-size: 30px;
+            margin: 0 0 9px 0;
           }
           p {
-            font-size: 18px;
+            font-size: 15px;
           }
           p:before {
-            margin-bottom: 16px;
+            margin-bottom: 3px;
           }
           p:after {
-            margin-top: 16px;
+            margin-top: 3px;
           }
         }
         section {
-          margin: 0 0 57px 0;
+          p {
+            font-size: 15px;
+            margin: 0;
+          }
+          ul {
+            margin: 0 0 6px 0;
+            li {
+              margin: 0 0 6px 0;
+              span.title {
+                font-size: 14px;
+              }
+              span.institution {
+                font-size: 13px;
+              }
+              span.date-and-place {
+                font-size: 12px;
+              }
+            }
+          }
         }
       }
     }
@@ -93,6 +111,9 @@
               height: 195px;
               margin: 0 0 24px 0;
             }
+          }
+          p {
+            font-size: 16px;
           }
         }
       }

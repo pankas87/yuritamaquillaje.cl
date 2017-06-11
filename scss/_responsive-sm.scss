@@ -91,33 +91,50 @@
       article {
         padding-top: 42px;
         header {
-          margin: 0 0 21px 0;
+          margin: 0 0 9px 0;
           h3 {
-            font-size: 33px;
+            font-size: 27px;
             line-height: 1em;
-            margin: 0 0 21px 0;
-            padding: 0 15px;
+            margin: 0 0 9px 0;
+            padding: 0 9px;
           }
           p {
-            font-size: 14px;
+            padding: 0 9px;
+            font-size: 13px;
           }
           p:before {
-            margin-bottom: 12px;
+            margin-bottom: 3px;
           }
           p:after {
-            margin-top: 12px; 
+            margin-top: 3px; 
           }
         }
         section {
-          margin: 0 0 42px 0;
           p {
-            font-size: 13px;
+            font-size: 12px;
+            margin: 0 0 3px 0;
+          }
+          ul {
+            margin: 0 0 8px 0;
+            li {
+              margin: 0 0 3px 0;
+              span.title {
+                font-size: 11px;
+              }
+              span.institution {
+                font-size: 10px;
+              }
+              span.date-and-place {
+                font-size: 9px;
+              }
+            }
           }
         }
         footer {
           .signature {
-            font-size: 33px;
-            line-height: 1.4em;
+            font-size: 24px;
+            line-height: 1em;
+            margin: 0 0 3px 0;
           }
           .title {
             font-size: 11px;
@@ -138,7 +155,7 @@
         background-size: 1142px;
         .box-shadow-small {
           header {
-            margin: 0 0 51px 0;
+            margin: 0 0 39px 0;
             img {
               height: 147px;
               margin: 0 0 21px 0;
@@ -148,7 +165,8 @@
             }
           }
           p {
-              font-size: 15px;
+              font-size: 12px;
+              line-height: 1.3em;
           }
         }
       }

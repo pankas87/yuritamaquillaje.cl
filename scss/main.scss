@@ -418,7 +418,8 @@ textarea.form-control {
             color: $basic-white;
             font-size: 18px;
             font-weight: 400;
-            padding: 0 9px;
+            line-height: 1.5em;
+            padding: 0 33px;
             text-align: center;
         }
       }
@@ -455,7 +456,7 @@ textarea.form-control {
 
 // Contact
 #contact {
-  background-image: linear-gradient(rgba(207, 189, 106,0.85), rgba(207, 189, 106,0.85)), url('../img/yuri-baptista-utensilios-2.jpg');
+  background-image: linear-gradient(rgba(207, 189, 106,0.85), rgba(207, 189, 106,0.85)), url('../img/yuri-baptista-utensilios-1.jpg');
   background-repeat: no-repeat;  
   background-position: 0 0;
   background-size: cover;
