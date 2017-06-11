@@ -45,12 +45,14 @@
 
   // Header Jumbotron
   #main-banner {
-    height: 387px;
+    height: 336px;
+    background: transparent url('../img/yuri-baptista-jumbotron-1.jpg') no-repeat 0 -132px;
+    background-size: 100% auto;
     margin-bottom: 24px;
-    padding-top: 225px;
+    padding-top: 162px;
 
     h1 {
-      font-size: 72px;
+      font-size: 65px;
       margin-bottom: 12px;
     }
 
@@ -59,11 +61,11 @@
     }
 
     hr:after {
-      content: "...................................";
+      content: "................................";
     }
 
     h2 {
-      font-size: 36px;
+      font-size: 32px;
     }
   }
 
@@ -168,7 +170,7 @@
   #portfolio-body {
     #decorative-header {
       height: 90px;
-      background: transparent url('../img/yuri-baptista-jumbotron-2.jpg') no-repeat 0 -115px;
+      background: transparent url('../img/yuri-baptista-jumbotron-1.jpg') no-repeat 0 -115px;
       background-size: 100% auto;
     }
 

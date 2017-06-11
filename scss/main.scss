@@ -201,11 +201,11 @@ textarea.form-control {
 
 // Header Jumbotron
 #main-banner {
-  height: 960px;
-  background: transparent url('../img/yuri-baptista-jumbotron-2.jpg') no-repeat 0 -51px;
+  height: 732px;
+  background: transparent url('../img/yuri-baptista-jumbotron-1.jpg') no-repeat 0 -183px;
   background-size: 100% auto;
-  margin-bottom: -280px;
-  padding-top: 333px;
+  margin-bottom: -149px;
+  padding-top: 279px;
 
   .heading {
     color: #FFF;
@@ -665,5 +665,6 @@ textarea.form-control {
   }
 }
 
+@import 'responsive-lg';
 @import 'responsive-md';
 @import 'responsive-sm';

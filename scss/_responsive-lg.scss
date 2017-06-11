@@ -1,0 +1,20 @@
+// Bootstrap's LG size
+@media (min-width: 1200px) and (max-width: 1589px) {
+  
+
+}
+
+// Larger Screens, up to 1980px, fuck 4K screens
+@media (min-width: 1590px) and (max-width: 1980px) {
+  /****************************************************/
+  /*                   Homepage                       */
+  /****************************************************/ 
+  #main-banner {
+    height: 819px;
+    background: transparent url('../img/yuri-baptista-jumbotron-1.jpg') no-repeat 0 -228px;
+    background-size: 100% auto;
+    margin-bottom: -186px;
+    padding-top: 285px;
+  }
+
+}
