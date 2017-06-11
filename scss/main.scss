@@ -279,24 +279,29 @@ textarea.form-control {
 
     article {
       padding-top: 70px;
+      a {
+        color: $light-grey-text;
+        cursor: pointer;
+        text-decoration: underline;
+      }
       header {
-        margin: 0 0 44px 0;
+        margin: 0 0 21px 0;
         h3 {
           color: $primary-title-1;
           font-family: $font-titles;
-          font-size: 60px;
+          font-size: 48px;
           font-weight: bold;
           line-height: 1em;
-          margin: 0 0 57px 0;
+          margin: 0 0 21px 0;
           padding: 0 15px;
           text-transform: uppercase;
         }
         p {
           color: $dark-grey-text;
-          font-size: 22px;
+          font-size: 17px;
           font-style: italic;
           font-weight: 300;
-          line-height: 1.25em;
+          line-height: 1.2em;
           margin: 0;
           padding: 0 15px;
         }
@@ -316,25 +321,51 @@ textarea.form-control {
           overflow: hidden; 
         }
         p:before {
-          margin-bottom: 22px;
+          margin-bottom: 6px;
         }
         p:after {
-          margin-top: 22px; 
+          margin-top: 6px;
         }
       }
       section {
         height: 100%;
         max-height: 100%;
-        margin: 0 0 57px 0;
+        margin: 0 0 6px 0;
         p {
+          color: $primary-title-3;
+          font-family: $font-subtitles;
           font-size: 16px;
+          font-weight: bold;
+          margin: 0 0 6px;
+          line-height: 1em;
+        }
+        ul {
+          list-style: none;
+          margin: 0 0 12px 0;
+          padding: 0;
+          li {
+            margin: 0 0 12px 0;
+            span {
+              display: block;
+            }
+            span.title {
+              font-weight: bold;
+              font-size: 15px;
+            }
+            span.institution {
+              font-size: 14px;
+            }
+            span.date-and-place {
+              font-size: 13px;
+            }
+          }
         }
       }
       footer {
         .signature {
           color: $secondary-title-1; 
           font-family: $font-titles;
-          font-size: 36px;
+          font-size: 29px;
           line-height: 1.2em;
           margin: 0;
         }
