@@ -216,32 +216,9 @@
     }
 
     #portfolio {
-      padding: 90px 0;
       ul.portfolio-list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        margin: 0;
         a {
-          display: block;
-          height: 328px;
-          img {
-            width: 100%;
-            height: 100%;          
-            background-color: $light-grey-text;
-            cursor: pointer;
-            display: inline-block;
-            margin: auto;
-          }        
-        }
-        a.landscape {
-          width: 48%;
-          flex-grow: 2;
-        }
-        a.portrait {
-          width: 24%;
-          flex-grow: 1;
+          height: 250px;
         }
       }
     }
