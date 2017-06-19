@@ -454,6 +454,81 @@ textarea.form-control {
   }
 }
 
+// Social Networks
+#social-networks {
+  background-color: $section-background;
+  margin-bottom: 90px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  h3 {
+    color: $secondary-title-1;
+    font-family: $font-titles;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 1em;
+    margin: 0 0 24px 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  #social-widget-facebook {
+    .fb-page {
+      display: none;
+    }
+
+    .fb-page.fb_iframe_widget {
+      display: block;
+    }
+
+    .fb-page, .fb-page iframe[style], .fb-page span {
+      width: 100% !important;
+    }
+  }
+  #social-widget-instagram {
+    iframe {
+      margin: 0 0 9px 0;
+    }
+
+    h4 {
+      height: 28px;
+      background: transparent url('../img/instagram-logo.jpg') no-repeat 0 0;
+      background-size: 28px 28px;
+      font-size: 19px;
+      line-height: 28px;
+      margin: 0;
+      padding: 0 0 0 36px;
+      span {
+        
+      }
+      a {
+        height: 30px;
+        font-weight: 500;
+      }
+      a:hover,
+      a:active,
+      a:focus {
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+  #social-widget-twitter {
+    a.twitter-timeline {
+      display: none;
+    }
+
+    iframe {
+      border: 1px solid $soft-grey !important;
+      border: 1px solid rgba(15,70,100,.12) !important;
+    }
+  }
+
+  
+
+}
+
 // Contact
 #contact {
   background-image: linear-gradient(rgba(207, 189, 106,0.85), rgba(207, 189, 106,0.85)), url('../img/yuri-baptista-utensilios-1.jpg');

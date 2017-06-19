@@ -11,6 +11,20 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body id="home-body">
+  <!-- Facebook Shit -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.9&appId=373395179379343";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- SnapWidget Shit (Instagram Embedd) -->
+  <script src="https://snapwidget.com/js/snapwidget.js"></script>
+
   <nav id="top-navbar" class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-wrap collapse navbar-collapse">
       <p class="navbar-text">
@@ -125,6 +139,27 @@
       </article>
     </div>
   </section>
+
+  <aside id="social-networks" class="container box-shadow hidden-md hidden-sm hidden-xs">
+    <div class="row">
+      <h3 class="col-sm-12">Mis Redes</h3>
+    </div>
+    <div class="row">
+      <div id="social-widget-facebook" class="col-lg-4 col-md-4 col-sm-12 social-widget">
+        <div class="fb-page" data-href="https://www.facebook.com/yuritalinda.mua/" data-tabs="timeline" data-width="500" data-height="416" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/yuritalinda.mua/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/yuritalinda.mua/">Yuritalinda Makeup Artist</a></blockquote></div>
+      </div>
+      <div id="social-widget-instagram" class="col-lg-4 col-md-4 col-sm-12 social-widget">
+        <iframe src="https://snapwidget.com/embed/398022" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+        <h4>
+          <span>Fotos por</span>
+          <a href="https://www.instagram.com/yurita_makeup/" target="_blank">@yurita_makeup</a>
+        </h4>
+      </div>
+      <div id="social-widget-twitter" class="col-lg-4 col-md-4 col-sm-12 social-widget">
+        <a class="twitter-timeline" href="https://twitter.com/yuritalinda_mua" data-height="416">Tweets by yuritalinda_mua</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </aside>
 
   <section id="contact" class="container box-shadow">
     <header class="row">
