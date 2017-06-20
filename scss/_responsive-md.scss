@@ -155,6 +155,20 @@
 
     #portfolio {
       padding: 60px 0;
+      ul.portfolio-list {
+        a {
+          height: 323px;
+        }
+      }
+    }
+    #lean_content_picture.portrait {
+      width: 39%;
+      top: 21px !important;
+    }
+
+    #lean_content_picture.landscape {
+      width: 81%;
+      top: 21px !important;
     }
   }
 }
