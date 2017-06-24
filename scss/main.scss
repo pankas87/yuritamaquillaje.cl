@@ -91,6 +91,50 @@ textarea.form-control {
   box-shadow:         0px 2px 2px 0px rgba(0,0,0,0.6);
   margin: 0;
   z-index: 10;
+  .navbar-text {
+    width: 204px;
+    height: 54px;
+    border: 6px solid #FFF;
+    border-style: solid solid none solid;
+    cursor: default;
+    color: #FFF;
+    display: inline-block;
+    font-family: $font-titles;
+    font-size: 21px;
+    float: none;
+    margin: 0 0 0 -102px;
+    padding: 6px;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    text-align: center; 
+    text-transform: uppercase;
+
+    img {
+      width: 45px;
+      position: absolute;
+      top: 34px;
+      left: 73px;
+    }
+
+    .border-bottom-left,
+    .border-bottom-right {
+      width: 75px;
+      height: 6px;
+      background-color: #FFF;
+      display: block;
+      position: absolute;
+      top: 48px;
+    }
+
+    .border-bottom-left {      
+      left: -6px;
+    }
+
+    .border-bottom-right {
+      right: -6px;
+    }
+  }
   .navbar-wrap {
     text-align: center;
     .nav.navbar-nav {
@@ -148,50 +192,6 @@ textarea.form-control {
         border-top: 4px solid #FFF;
       }
     }
-
-    .navbar-text {
-      width: 204px;
-      height: 54px;
-      border: 6px solid #FFF;
-      border-style: solid solid none solid;
-      cursor: default;
-      color: #FFF;
-      display: inline-block;
-      font-family: $font-titles;
-      font-size: 21px;
-      float: none;
-      margin: 0 0 0 -102px;
-      padding: 6px;
-      position: absolute;
-      top: 12px;
-      left: 50%;
-      text-transform: uppercase;
-
-      img {
-        width: 45px;
-        position: absolute;
-        top: 34px;
-        left: 73px;
-      }
-
-      .border-bottom-left,
-      .border-bottom-right {
-        width: 75px;
-        height: 6px;
-        background-color: #FFF;
-        display: block;
-        position: absolute;
-        top: 48px;
-      }
-
-      .border-bottom-left {      
-        left: -6px;
-      }
-
-      .border-bottom-right {
-        right: -6px;
-      }
-    }
   }
 }
 
@@ -225,6 +225,7 @@ textarea.form-control {
   hr {
     height: 15px;
     border: none;
+    box-sizing: border-box;
     margin-top: 0;
     margin-bottom: 21px;
     line-height: 4px;
@@ -795,3 +796,4 @@ textarea.form-control {
 @import 'responsive-lg';
 @import 'responsive-md';
 @import 'responsive-sm';
+@import 'responsive-xs';

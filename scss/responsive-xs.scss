@@ -1,0 +1,120 @@
+@media (max-width: 767px){
+
+  /****************************************************/
+  /*                  Main Menu                       */
+  /****************************************************/ 
+  #top-navbar {
+    .navbar-text {
+      width: 108px;
+      height: 27px;
+      border-width: 3px;
+      font-size: 11px;
+      line-height: 1em;
+      padding: 5px 6px;
+      margin: 0;
+      top: 9px;
+      left: 6px;
+      img {
+        width: 27px;
+        left: 38px;
+        top: 18px;
+      }
+
+      .border-bottom-left,
+      .border-bottom-right {
+        width: 33px;
+        height: 3px;
+        top: 24px;
+      }
+
+      .border-bottom-left {
+        left: -3px;
+      }
+
+      .border-bottom-right {
+        right: -3px;
+      }
+    }
+    .navbar-wrap {
+      text-align: left;
+      .nav.navbar-nav {
+        height: auto;
+        display: block;
+        margin: 7.5px -15px;
+        li {
+          min-width: 0;
+          max-width: none;
+          height: auto;
+          display: block;
+          float: none;
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 1em;
+          margin: 0;
+          position: relative;
+          a,
+          a:link,
+          a:visited {
+            padding: 9px 12px;
+          }
+        }
+        li.services {
+          margin: 0;
+        }
+        li.portfolio {
+          margin: 0;
+        }
+        li.bullet:after {
+          content: "";
+        }
+      }
+    }
+  }
+
+
+  /****************************************************/
+  /*                   Homepage                       */
+  /****************************************************/ 
+
+  // Header Jumbotron
+  #main-banner {
+    height: 307px;
+    background: transparent url('../img/yuri-baptista-jumbotron-1.jpg') no-repeat 0 0;
+    background-size: 100% auto;
+    margin-bottom: 24px;
+    padding-top: 171px;
+
+    h1 {
+      font-size: 39px;
+      margin-bottom: 9px;
+    }
+
+    hr {
+      margin: 0 0 9px 0;
+    }
+
+    hr:after {
+      content: ".............................";
+      font-size: 18px;
+      letter-spacing: 4px;
+      
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+  }
+
+  #about-me{}
+
+  #services {
+    height: auto;
+    max-height: none;
+    margin-bottom: 90px;
+    .row {
+      article {
+        margin: 0 0 30px 0;
+      }
+    }
+  }
+}
