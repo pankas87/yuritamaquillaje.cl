@@ -4,6 +4,8 @@
   /*                  Main Menu                       */
   /****************************************************/ 
   #top-navbar {
+    max-height: none;
+    @include transparent-background-color(#000, 0, 0, 0, 0.6);
     .navbar-text {
       width: 108px;
       height: 27px;
@@ -55,6 +57,7 @@
           a,
           a:link,
           a:visited {
+            display: block;
             padding: 9px 12px;
           }
         }
@@ -105,7 +108,53 @@
     }
   }
 
-  #about-me{}
+  #about-me{
+    height: auto;
+    max-height: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:    none;
+    box-shadow:         none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .row {
+      height: auto;
+      max-height: none;
+      aside {
+        height: auto;
+        background: none;
+        img {
+          width: 100%;
+          height: auto;
+          position: initial;
+        }
+      }
+      article {
+        padding-top: 15px;
+        padding-top: 15px;
+        header {
+          margin: 0 0 12px 0;
+          h3 {
+            font-size: 36px;
+            margin: 0 0 12px 0;         
+            text-align: center;
+          }
+          p {
+            font-size: 15px;
+          }
+          p:before,
+          p:after {
+            font-size: 15px;
+          }
+          p:before {
+            margin-bottom: 6px;
+          }
+          p:after {
+            margin-top: 6px;
+          }
+        }
+      }
+    }
+  }
 
   #services {
     height: auto;
