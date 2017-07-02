@@ -219,9 +219,13 @@
   /*                  Portfolio                       */
   /****************************************************/ 
   #portfolio-body {
+    #top-navbar {
+      margin-bottom: 15px;
+    }
+
     #decorative-header {
-      height: 51px;
-      background: transparent url('../img/yuri-baptista-jumbotron-1.jpg') no-repeat 0 0;
+      height: 66px;
+      background: none;
     }
 
     #section-header {
@@ -238,7 +242,7 @@
     }
 
     #portfolio {
-      padding: 30px 0;
+      padding: 15px 0;
       div.portfolio-list {
         a {
           height: auto;
