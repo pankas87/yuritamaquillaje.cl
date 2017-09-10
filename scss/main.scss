@@ -572,6 +572,11 @@ textarea.form-control {
       font-size: 35px;
       font-family: $font-subtitles;
       text-align: center;
+      a,
+      a:link,
+      a:visited {
+        color: $basic-white;
+      }
     }
   }
   article:before {
